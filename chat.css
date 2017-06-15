@@ -1,0 +1,37 @@
+body{
+	margin: 30px;
+
+}
+#chatbox{
+	display: none;
+}	
+#personalmessageform{
+	padding: 2%;
+	border: solid 2px black;
+	border-radius: 2%;
+	background-color: 	#8FBC8F;
+	margin-bottom: 10px;
+}
+li:hover{
+	background-color: 	#B0C4DE;
+}
+
+.personal{
+	background-color: #7FFFD4;
+}
+#error{
+	color:red;
+}
+
+#chat{
+	border: solid 2px 	#006400;
+	border-radius: 10px;
+	padding: 2%;
+	margin-bottom: 2%; 
+	height: 60vh;
+	overflow-y: auto;
+}
+#onliners{
+	height: 40vh;
+	overflow-y: scroll;
+}

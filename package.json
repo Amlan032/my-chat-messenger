@@ -1,0 +1,19 @@
+{
+  "name": "my-chat-messenger",
+  "version": "1.0.0",
+  "description": "This app lets you do both private and group chats.",
+  "main": "private-chat.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "connect": "^3.6.2",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "socket.io": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amlan Jyoti Das",
+  "license": "ISC"
+}

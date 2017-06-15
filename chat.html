@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Messenger</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/chat.css">
+
+	 <script src="/socket.io/socket.io.js"></script>
+	  <script src="/js/client-chat.js"></script>
+</head>
+<body>
+			<form id="userform">
+				<div class="form-group">
+					<label class="well">Enter Username</label>
+					<input class="form-control" id="user" required><br>
+					<label class="well">Enter email-id</label>
+					<input class="form-control" id="useremail" required><br>
+					<input type="submit" name="submit" class="btn btn-primary" value="Login">
+				</div>
+			</form>
+
+<div class="container">
+	<div class="row" id="chatbox">
+		<div class="col-xs-4 col-md-4" id="fix" >
+			
+			<form id="personalmessageform">
+				<div class="form-group">
+					
+					<textarea class="form-control" id="recipient" required placeholder="Enter recipient"></textarea><br>
+					<textarea class="form-control" id="personalmessage" required placeholder="Write chat message"></textarea><br>
+					<input type="submit" name="submit" class="btn btn-primary" value="Send">
+					
+				</div>
+			</form>
+
+			
+
+			<div class="well" id="onliners">
+				<h3>Online Users</h3>
+				<ul class="list-group"></ul>
+				
+			</div>
+
+		</div>
+		<div class="col-xs-8 col-md-8">
+			
+			
+			<div class="chat" id="chat"></div>
+
+			<form id="messageform">
+				<div class="form-group">
+					<label class="well" id="baba">Write Message</label>
+					<textarea class="form-control" id="message" placeholder="Write group message" required></textarea><br>
+					<input type="submit" name="submit" class="btn btn-primary" value="Send">
+				</div>
+			</form>
+
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
